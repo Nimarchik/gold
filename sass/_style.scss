@@ -1,0 +1,518 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: $font;
+	font-weight: 400;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+// .footer {
+// 	background-color: $color-bg-Btn;
+// 	height: 50px;
+// }
+
+.container {
+	max-width: 1110px;
+	margin: 0 auto;
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 25px 0 31px;
+	color: $color-text;
+	z-index: 5;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav__list,
+.top__list {
+	@include listStyle;
+}
+
+.nav__list-link {
+	position: relative;
+	transition: all 0.4s;
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: -5px;
+		width: 0;
+		height: 2px;
+		background-color: $color-text;
+		z-index: 2;
+		transition: all 0.4s;
+	}
+
+	&:hover {
+		transform: scale(1.05);
+		transition: all 0.4s;
+
+		&::after {
+			left: 0;
+			width: 100%;
+			box-shadow: 0 3px 9px $color-text;
+			transition: all 0.4s;
+		}
+	}
+}
+
+.top {
+	position: relative;
+	max-width: 1920px;
+	height: 950px;
+	margin: 0 auto 100px;
+}
+
+.top__bg-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+.top__group {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.top__title {
+	@include sectionTitle;
+	margin-bottom: 50px;
+}
+.top__btn {
+	display: block;
+	margin: 0 auto;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: $font;
+	padding: 15px 35px;
+	color: $color-text;
+	text-transform: uppercase;
+	border: 1px solid $color-text;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: $color-text;
+		color: $color-bg-Btn;
+		transition: all 0.4s;
+	}
+}
+
+.top__line {
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin: 80px 0 30px;
+	background-color: $color-text;
+}
+
+.top__list {
+	margin-bottom: 30px;
+	gap: 15px;
+}
+
+.top__list-item {
+	padding-right: 15px;
+	border-right: 1px solid $color-text;
+}
+
+.actions {
+	margin-bottom: 120px;
+}
+
+.actions-subscript {
+	text-align: center;
+	font-size: 21px;
+	margin-bottom: 15px;
+}
+.actions-title {
+	text-align: center;
+	@include sectionTitle;
+	color: $color-bg-Btn;
+	font-family: $font-noto;
+	margin-bottom: 60px;
+}
+
+.actions__list {
+	display: flex;
+	justify-content: center;
+	gap: 18px;
+	margin-bottom: 55px;
+}
+.actions__list-btn {
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 20px 36px;
+	margin-bottom: 55px;
+	border: 1px solid $color-bg-Btn;
+	box-shadow: 4px 3px 1px rgba($color: #000000, $alpha: 0.5);
+	transition: all 0.4s;
+
+	&:hover {
+		background-color: $color-bg-Btn;
+		color: $color-text;
+		box-shadow: none;
+		transition: all 0.4s;
+	}
+}
+
+.actions-lists__group-wedding_list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	margin-bottom: 120px;
+}
+.actions-lists__group-wedding_list-item {
+	position: relative;
+	cursor: pointer;
+	width: 350px;
+	height: 280px;
+	overflow: hidden;
+	transition: all 0.4s;
+
+	&:hover {
+		.actions-lists__group-wedding_list-img {
+			transform: scale(1.1);
+			transition: all 0.3s;
+		}
+	}
+}
+.actions-lists__group-wedding_list-img {
+	transition: all 0.3s;
+}
+.actions-lists__group-wedding_list-title {
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+	transform: translate(-50%);
+	text-transform: uppercase;
+	color: $color-text;
+	font-weight: 500;
+	font-size: 24px;
+	z-index: 6;
+}
+
+.salons {
+	// padding: 120px 0 120px;
+	background-color: $color-bg-Btn;
+	height: 541px;
+}
+
+.salons__content {
+	margin: 0 auto;
+	padding: 100px 0;
+	width: 730px;
+}
+
+.salons__text,
+.articles__text,
+.media__text,
+.tips__text {
+	text-align: center;
+	color: $color-text;
+	font-size: 21px;
+	margin-bottom: 15px;
+}
+
+.salons__title,
+.articles__title,
+.media__title,
+.tips__title {
+	@include sectionTitle;
+	font-family: $font-noto;
+	text-align: center;
+	margin-bottom: 45px;
+}
+.salons__subscripts {
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 60px;
+	color: $color-text;
+}
+
+.salons__btn {
+	display: block;
+	margin: 0 auto;
+	padding: 15px 35px;
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+	background-color: $color-text;
+	color: $color-bg-Btn;
+	transition: all 0.4s;
+
+	&:hover {
+		color: $color-text;
+		background-color: $color-bg-Btn;
+		box-shadow: 0 3px 18px $color-text;
+		transition: all 0.4s;
+	}
+}
+
+.articles {
+	padding: 120px 0;
+}
+
+.articles__text,
+.articles__title,
+.media__text,
+.media__title {
+	color: $color-bg-Btn;
+}
+
+.articles__list {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 60px;
+}
+
+.articles__list-item {
+	position: relative;
+	cursor: pointer;
+	width: 350px;
+	height: 370px;
+	transition: all 0.4s;
+
+	&:hover {
+		box-shadow: 5px 0 15px $color-bg-Btn;
+		transition: all 0.4s;
+	}
+}
+
+.articles__list-title {
+	position: absolute;
+	bottom: 35px;
+	right: 50%;
+	transform: translate(50%);
+	font-size: 21px;
+	text-align: center;
+	color: $color-text;
+}
+
+.articles__btn {
+	display: block;
+	margin: 0 auto;
+	padding: 15px 35px;
+	color: $color-text;
+	background-color: $color-bg-Btn;
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 10%;
+	transition: all 0.5s;
+
+	&:hover {
+		background-color: $color-text;
+		color: $color-bg-Btn;
+		box-shadow: 0 10px 15px $color-bg-Btn;
+		transition: all 0.4s;
+	}
+}
+
+.media {
+	padding: 0 0 120px;
+}
+
+.media__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0;
+}
+
+.media__list-item {
+	height: 300px;
+}
+
+.tips {
+	position: relative;
+	padding: 100px 0 120px;
+	color: $color-text;
+}
+.tips__img {
+	position: absolute;
+	inset: 0;
+	height: 478px;
+	z-index: -2;
+}
+
+.tips__title {
+	font-family: $font-noto;
+	font-weight: 900;
+	font-size: 30px;
+}
+
+.tips__content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 80px;
+}
+.tips__content-list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	font-size: 18px;
+}
+
+.tips__content-item {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 17px;
+		height: 17px;
+		background: url('../img/icon/arrows.svg');
+		background-size: cover;
+		background-position: 100px;
+	}
+}
+
+.tips__content-group {
+	border: 1px solid $color-text;
+	padding: 14px 15px;
+}
+
+.tips__content-group-bg {
+	background-color: $color-text;
+	padding: 20px 22px;
+}
+
+.tips__content-group-inp {
+	width: 200px;
+	height: 45px;
+	padding: 0 0 0 20px;
+	border: 1px solid $color-bg-Btn;
+	margin-right: 15px;
+
+	&::placeholder {
+		text-transform: uppercase;
+		letter-spacing: 10%;
+	}
+}
+
+.tips__content-group-btn {
+	padding: 14.5px 35px;
+	color: $color-text;
+	background-color: $color-bg-Btn;
+	font-weight: 500;
+	letter-spacing: 10%;
+	text-transform: uppercase;
+}
+
+.footer {
+	padding: 80px 0 20px;
+}
+
+.footer__content {
+	display: flex;
+	gap: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid $color-bg-Btn;
+}
+.footer__list {
+	width: 255px;
+}
+
+.footer__list-title {
+	padding: 0 0 10px 0;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 140%;
+	letter-spacing: 10%;
+	text-transform: uppercase;
+	border-bottom: 1px solid $color-bg-Btn;
+	margin-bottom: 30px;
+}
+
+.footer__list .footer__list-item {
+	margin-bottom: 15px;
+}
+.footer__list-iteme {
+	margin-bottom: 21px;
+}
+.footer__list-links {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.footer__list-linkv {
+	margin-right: 20px;
+}
+
+.footer__list-item-list{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__list-sub{
+  display: flex;
+  justify-content: space-between;
+}

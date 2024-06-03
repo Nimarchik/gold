@@ -1,3 +1,37 @@
+@import url(' https://fonts.cdnfonts.com/css/gilroy-bold ');
+
+$font: 'Gilroy-Regular', sans-serif;
+$font-noto: "Noto Sans", sans-serif;
+$color-text: #fff;
+$color-bg-Btn: #333;
+
+@mixin sectionTitle {
+  text-align: center;
+	font-weight: 700;
+	font-size: 30px;
+	color: $color-text;
+}
+
+@mixin textEvents{
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+@mixin  titleFooter{
+  font-weight: 500;
+  font-size: 18px;
+  color: $color-bg-Btn;
+  letter-spacing: 10%;
+}
+
+@mixin listStyle{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 @import 'style';
 @import 'catalog';
 @import 'about';

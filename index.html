@@ -5,7 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Ojjo</title>
 
-		<link rel="stylesheet" href="sass/index.css.map" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="sass/index.css" />
 
 		<script src="js/main.js" defer></script>
 	</head>
@@ -13,15 +20,488 @@
 		<div class="wrapper">
 			<heade class="header">
 				<div class="container">
-					<nav class="nav"></nav>
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__list-item">
+								<a href="#" class="nav__list-link">Контрагентам</a>
+							</li>
+							<li class="nav__list-item">
+								<a href="#" class="nav__list-link">Дизайнерами</a>
+							</li>
+							<li class="nav__list-item">
+								<a href="#" class="nav__list-link">Вакансії</a>
+							</li>
+						</ul>
+
+						<a href="#" class="nav__logo">
+							<img src="img/icon/logo.svg" alt="" class="nav__logo-img" />
+						</a>
+
+						<ul class="nav__list">
+							<li class="nav__list-item">
+								<a href="#" class="nav__list-link">Пошук</a>
+							</li>
+							<li class="nav__list-item">
+								<a href="#" class="nav__list-link">Вхід/Реєстрація</a>
+							</li>
+							<li class="nav__list-item">
+								<a href="#" class="nav__list-link">
+									<img src="img/icon/user.svg" alt="" class="nav__list-img" />
+								</a>
+							</li>
+							<li class="nav__list-item">
+								<a href="#" class="nav__list-link">
+									<img
+										src="img/icon/favorits.svg"
+										alt=""
+										class="nav__list-img"
+									/>
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</heade>
 
-      <main class="main">
-        <section class="top"></section>
-      </main>
+			<main class="main">
+				<section class="top">
+					<img src="img/photo/bgc.jpg" alt="" class="top__bg-img" />
 
-      <footer class="footer"></footer>
+					<div class="top__group">
+						<div class="container">
+							<h1 class="top__title">Довго, дорого, багато!</h1>
+							<button class="top__btn">каталог виробів</button>
+						</div>
+						<span class="top__line"></span>
+						<div class="container">
+							<ul class="top__list">
+								<li class="top__list-item">
+									<img
+										src="img/icon/logoTop.svg"
+										alt=""
+										class="top__list-img"
+									/>
+								</li>
+								<li class="top__list-item">
+									<img
+										src="img/icon/logoTop.svg"
+										alt=""
+										class="top__list-img"
+									/>
+								</li>
+								<li class="top__list-item">
+									<img
+										src="img/icon/logoTop.svg"
+										alt=""
+										class="top__list-img"
+									/>
+								</li>
+								<li class="top__list-item">
+									<img
+										src="img/icon/logoTop.svg"
+										alt=""
+										class="top__list-img"
+									/>
+								</li>
+								<li class="top__list-item">
+									<img
+										src="img/icon/logoTop.svg"
+										alt=""
+										class="top__list-img"
+									/>
+								</li>
+								<li class="top__list-itemen">
+									<img
+										src="img/icon/logoTop.svg"
+										alt=""
+										class="top__list-img"
+									/>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<sectoin class="actions">
+					<div class="container">
+						<p class="actions-subscript">До заходів</p>
+						<h2 class="actions-title">Справжня краса тут!</h2>
+						<ul class="actions__list">
+							<li class="actions__list-item">
+								<button class="actions__list-btn">Весілля</button>
+							</li>
+							<li class="actions__list-item">
+								<button class="actions__list-btn">ЧОЛОВІКУ</button>
+							</li>
+							<li class="actions__list-item">
+								<button class="actions__list-btn">дружині</button>
+							</li>
+							<li class="actions__list-item">
+								<button class="actions__list-btn">партнерові</button>
+							</li>
+							<li class="actions__list-item">
+								<button class="actions__list-btn">колекції</button>
+							</li>
+							<li class="actions__list-item">
+								<button class="actions__list-btn">рідкість</button>
+							</li>
+						</ul>
+
+						<div class="actions-lists__group">
+							<div class="actions-lists__group-wedding">
+								<ul class="actions-lists__group-wedding_list">
+									<li class="actions-lists__group-wedding_list-item">
+										<img
+											src="img/photo/actions1.jpg"
+											alt=""
+											class="actions-lists__group-wedding_list-img"
+										/>
+										<h3 class="actions-lists__group-wedding_list-title">
+											Кільця
+										</h3>
+									</li>
+									<li class="actions-lists__group-wedding_list-item">
+										<img
+											src="img/photo/actions2.jpg"
+											alt=""
+											class="actions-lists__group-wedding_list-img"
+										/>
+										<h3 class="actions-lists__group-wedding_list-title">
+											сережки
+										</h3>
+									</li>
+									<li class="actions-lists__group-wedding_list-item">
+										<img
+											src="img/photo/actions3.jpg"
+											alt=""
+											class="actions-lists__group-wedding_list-img"
+										/>
+										<h3 class="actions-lists__group-wedding_list-title">
+											підвіски
+										</h3>
+									</li>
+									<li class="actions-lists__group-wedding_list-item">
+										<img
+											src="img/photo/actions4.jpg"
+											alt=""
+											class="actions-lists__group-wedding_list-img"
+										/>
+										<h3 class="actions-lists__group-wedding_list-title">
+											запонки
+										</h3>
+									</li>
+									<li class="actions-lists__group-wedding_list-item">
+										<img
+											src="img/photo/actions5.jpg"
+											alt=""
+											class="actions-lists__group-wedding_list-img"
+										/>
+										<h3 class="actions-lists__group-wedding_list-title">
+											браслети
+										</h3>
+									</li>
+									<li class="actions-lists__group-wedding_list-item">
+										<img
+											src="img/photo/actions6.jpg"
+											alt=""
+											class="actions-lists__group-wedding_list-img"
+										/>
+										<h3 class="actions-lists__group-wedding_list-title">
+											годинники
+										</h3>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</sectoin>
+
+				<section class="salons">
+					<div class="conatiner">
+						<div class="salons__content">
+							<p class="salons__text">Не знаєте, що обрати?</p>
+							<h4 class="salons__title">Завітайте до наших салонів у Києві</h4>
+							<p class="salons__subscripts">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+								voluptatibus illum commodi optio veritatis perspiciatis iste
+								vero quae non reprehenderit dolor, magnam deserunt accusantium
+								accusamus officia aliquam aperiam alias! Provident?
+							</p>
+							<button class="salons__btn">наші салони</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="articles">
+					<div class="container">
+						<p class="articles__text">Корисні статті</p>
+						<h5 class="articles__title">
+							Найкращі поради щодо підбору дорогих подарунків
+						</h5>
+						<ul class="articles__list">
+							<li class="articles__list-item">
+								<img
+									src="img/photo/articles1.jpg"
+									alt=""
+									class="articles__list-img"
+								/>
+								<h6 class="articles__list-title">
+									Як вибрати годинник для своєї майбутньої дружини
+								</h6>
+							</li>
+							<li class="articles__list-item">
+								<img
+									src="img/photo/articles2.jpg"
+									alt=""
+									class="articles__list-img"
+								/>
+								<h6 class="articles__list-title">
+									Запонки для чоловіка: 7 ключових правил
+								</h6>
+							</li>
+							<li class="articles__list-item">
+								<img
+									src="img/photo/articles3.jpg"
+									alt=""
+									class="articles__list-img"
+								/>
+								<h6 class="articles__list-title">
+									Як вибрати обручки молодятам
+								</h6>
+							</li>
+						</ul>
+
+						<button class="articles__btn">читати наш блог</button>
+					</div>
+				</section>
+
+				<section class="media">
+					<div class="container">
+						<p class="media__text">#ojjo_jewerly</p>
+						<h6 class="media__title">Ми у соціальних мережах</h6>
+						<ul class="media__list">
+							<li class="media__list-item">
+								<img
+									src="img/photo/media1.jpg"
+									alt=""
+									class="media__list-img"
+								/>
+							</li>
+							<li class="media__list-item">
+								<img
+									src="img/photo/media2.jpg"
+									alt=""
+									class="media__list-img"
+								/>
+							</li>
+							<li class="media__list-item">
+								<img
+									src="img/photo/media3.jpg"
+									alt=""
+									class="media__list-img"
+								/>
+							</li>
+							<li class="media__list-item">
+								<img
+									src="img/photo/media4.jpg"
+									alt=""
+									class="media__list-img"
+								/>
+							</li>
+							<li class="media__list-item">
+								<img
+									src="img/photo/media5.jpg"
+									alt=""
+									class="media__list-img"
+								/>
+							</li>
+							<li class="media__list-item">
+								<img
+									src="img/photo/media6.jpg"
+									alt=""
+									class="media__list-img"
+								/>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="tips">
+					<img src="img/photo/bacgroundTips.jpg" alt="" class="tips__img" />
+					<div class="container">
+						<p class="tips__text">Корисні поради та персональні пропозиції</p>
+						<h6 class="tips__title">Ексклюзивна розсилка</h6>
+						<div class="tips__content">
+							<ul class="tips__content-list">
+								<li class="tips__content-item">Особистий менеджер</li>
+								<li class="tips__content-item">Доставка та оформлення</li>
+								<li class="tips__content-item">Індивідуальний дизайн</li>
+							</ul>
+
+							<div class="tips__content-group">
+								<div class="tips__content-group-bg">
+									<input
+										type="email"
+										class="tips__content-group-inp"
+										placeholder="Ваш e-mail"
+									/>
+									<button class="tips__content-group-btn">Відправити</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__content">
+						<ul class="footer__list">
+							<li class="footer__list-item-title">
+								<h6 class="footer__list-title">Корисні посилання</h6>
+							</li>
+							<li class="footer__list-item">
+								<a href="" class="footer__list-link">Доставка</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="" class="footer__list-link">Оплата </a>
+							</li>
+							<li class="footer__list-item">
+								<a href="" class="footer__list-link">Акції</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="" class="footer__list-link"
+									>Політика конфіденційності</a
+								>
+							</li>
+						</ul>
+						<ul class="footer__list">
+							<li class="footer__list-item-title">
+								<h6 class="footer__list-title">оплата</h6>
+							</li>
+							<li class="footer__list-iteme">
+								<a href="" class="footer__list-linke"
+									>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Ullamcorper justo, nec, pellentesque.</a
+								>
+							</li>
+							<li class="footer__list-items">
+								<a href="" class="footer__list-linkv">
+									<img
+										src="img/icon/visa.svg"
+										alt=""
+										class="footer__list-img"
+									/>
+								</a>
+								<a href="" class="footer__list-linkv">
+									<img
+										src="img/icon/mastercard.svg"
+										alt=""
+										class="footer__list-img"
+									/>
+								</a>
+							</li>
+						</ul>
+						<ul class="footer__list">
+							<li class="footer__list-item-title">
+								<h6 class="footer__list-title">контакти</h6>
+							</li>
+							<li class="footer__list-item">
+								<a href="" class="footer__list-links">
+									<img
+										src="img/icon/phone.svg"
+										alt=""
+										class="footer__list-img"
+									/>
+									+380 (000) 00 00
+								</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="" class="footer__list-links">
+									<img
+										src="img/icon/phone.svg"
+										alt=""
+										class="footer__list-img"
+									/>
+									+380 (000) 00 00
+								</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="" class="footer__list-links">
+									<img
+										src="img/icon/email.svg"
+										alt=""
+										class="footer__list-img"
+									/>
+									ojjo@gmail.ua
+								</a>
+							</li>
+						</ul>
+						<ul class="footer__list">
+							<li class="footer__list-item-title">
+								<h6 class="footer__list-title">соціальні мережі</h6>
+							</li>
+							<li class="footer__list-item">
+								<p class="footer__list-linkv">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Ullamcorper justo, nec, pellentesque.
+								</p>
+							</li>
+							<ul class="footer__list-item-list">
+								<li class="footer__list-item-list-item">
+									<a href="" class="footer__list-item-list-link">
+										<img
+											src="img/icon/youtube.svg"
+											alt=""
+											class="footer__list-item-list-img"
+										/>
+									</a>
+								</li>
+								<li class="footer__list-item-list-item">
+									<a href="" class="footer__list-item-list-link">
+										<img
+											src="img/icon/facebook.svg"
+											alt=""
+											class="footer__list-item-list-img"
+										/>
+									</a>
+								</li>
+								<li class="footer__list-item-list-item">
+									<a href="" class="footer__list-item-list-link">
+										<img
+											src="img/icon/telegram.svg"
+											alt=""
+											class="footer__list-item-list-img"
+										/>
+									</a>
+								</li>
+								<li class="footer__list-item-list-item">
+									<a href="" class="footer__list-item-list-link">
+										<img
+											src="img/icon/etsy.svg"
+											alt=""
+											class="footer__list-item-list-img"
+										/>
+									</a>
+								</li>
+							</ul>
+						</ul>
+					</div>
+
+					<ul class="footer__list-sub">
+						<li class="footer__list-sub-item">
+							(c) 2020 OJJO jewelry
+						</li>
+						<li class="footer__list-sub-item">
+							<a href="" class="footer__list-sub-link">Договір публічної оферти</a>
+						</li>
+						<li class="footer__list-sub-item">
+							<a href="" class="footer__list-sub-link">Контрагентам</a>
+						</li>
+						<li class="footer__list-sub-item">Зроблено Figma.info</li>
+					</ul>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>
