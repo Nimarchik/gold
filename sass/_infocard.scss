@@ -1,0 +1,247 @@
+.cardtop {
+	padding: 135px 0 0;
+}
+.cardtop__inner {
+	display: flex;
+	justify-content: space-between;
+}
+.cardtop__inner-photo {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	width: 540px;
+}
+.cardtop__inner-photo-img {
+	&:nth-child(1) {
+		width: 540px;
+		height: 430px;
+	}
+	&:nth-child(2) {
+		width: 160px;
+		height: 120px;
+	}
+	&:nth-child(3) {
+		width: 160px;
+		height: 120px;
+	}
+	&:nth-child(4) {
+		width: 160px;
+		height: 120px;
+	}
+}
+
+.card__inner-info {
+	width: 540px;
+	border: 1px solid $color-bg-Btn;
+	padding: 10px;
+}
+.card__inner-info-title {
+	// text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 10%;
+	font-weight: 500;
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+.card__inner-info-border {
+	border: 1px solid $color-bg-Btn;
+	height: 100%;
+	padding: 40px 30px;
+}
+
+.card__inner-info-list,
+.card__inner-info-item {
+	display: flex;
+	gap: 15px;
+}
+.card__inner-info-list {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $color-grey;
+}
+
+.card__inner-info-item-title,
+.card__inner-info-item-text {
+	color: $color-grey;
+	font-size: 14px;
+}
+
+.card__inner-description {
+	margin-bottom: 30px;
+	line-height: 150%;
+	color: $color-bg-Btn;
+}
+.card__inner-price {
+	font-size: 24px;
+	font-weight: 900;
+	letter-spacing: 5%;
+	margin-bottom: 20px;
+}
+
+.card__inner-btn-group {
+	display: flex;
+	gap: 30px;
+}
+
+.card__inner-buy {
+	padding: 10px 20px;
+	color: $color-text;
+	font-size: 18px;
+	letter-spacing: 5%;
+	text-transform: uppercase;
+	background-color: $color-bg-Btn;
+	transition: all 0.4s;
+
+	&:hover {
+		border: 1px solid $color-bg-Btn;
+		background-color: $color-text;
+		color: $color-bg-Btn;
+		transition: all 0.4s;
+	}
+}
+
+.card__inner-addBasket {
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 5%;
+	border: 1px solid $color-bg-Btn;
+	transition: all 0.4s;
+
+	&:hover {
+		background-color: $color-bg-Btn;
+		color: $color-text;
+	}
+}
+
+.full-descript {
+	padding: 120px 0 120px;
+}
+
+.full-descript__group {
+	display: flex;
+	justify-content: space-between;
+	gap: 103px;
+}
+.full-descript__text {
+	position: relative;
+	width: 540px;
+}
+.full-descript__text-title {
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 1.4;
+	margin-bottom: 30px;
+}
+
+.full-descript__text-description {
+	position: relative;
+	font-size: 16px;
+	line-height: 150%;
+	margin-bottom: 20px;
+	height: 240px;
+	overflow: hidden;
+	transition: all 0.4s;
+
+	&::after {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 90px;
+		background: rgb(255, 255, 255);
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0.3492830882352942) 0%,
+			rgba(255, 255, 255, 1) 100%
+		);
+		transition: all 0.4s;
+	}
+}
+.full-descript__text-description--show {
+	// position: absolute;
+	height: 80%;
+	overflow: visible;
+	transition: all 0.4s;
+
+	&::after {
+		content: none;
+		transition: all 0.4s;
+	}
+}
+
+.full-descript__text-btn {
+	cursor: pointer;
+	position: relative;
+	padding: 5px;
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 10%;
+	text-transform: uppercase;
+	z-index: 2;
+	transition: all 0.4s;
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+		width: 100%;
+		height: 1px;
+		background-color: $color-bg-Btn;
+		z-index: -1;
+		transition: all 0.4s;
+	}
+
+	&:hover {
+		color: $color-text;
+		&::after {
+			height: 130%;
+			transition: all 0.4s;
+		}
+	}
+}
+
+.full-descript__list {
+	display: grid;
+	height: 359px;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px 70px;
+	transition: all 0.4s;
+}
+
+.full-descript__item {
+	display: flex;
+	width: 90px;
+	height: 133px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.full-descript__img {
+	width: 70px;
+	height: 70px;
+	margin-bottom: 15px;
+}
+.product__like {
+	padding-bottom: 155px;
+}
+.product__like-text {
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 21px;
+	line-height: 1.4;
+}
+.product__like-title {
+	margin-bottom: 60px;
+	text-align: center;
+	font-family: $font-noto;
+	font-size: 30px;
+	font-weight: 700;
+}
+.product__like-list {
+	display: flex;
+	justify-content: space-between;
+}

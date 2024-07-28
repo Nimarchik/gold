@@ -144,10 +144,11 @@ button {
 .top__btn {
 	display: block;
 	margin: 0 auto;
+	width: 227px;
 	font-size: 18px;
 	font-weight: 500;
 	font-family: $font;
-	padding: 15px 35px;
+	padding: 15px 30px;
 	color: $color-text;
 	text-transform: uppercase;
 	border: 1px solid $color-text;
@@ -472,9 +473,9 @@ button {
 .footer__content {
 	display: flex;
 	gap: 30px;
-  margin-bottom: 20px;
-  padding-bottom: 60px;
-  border-bottom: 1px solid $color-bg-Btn;
+	margin-bottom: 20px;
+	padding-bottom: 60px;
+	border-bottom: 1px solid $color-bg-Btn;
 }
 .footer__list {
 	width: 255px;
@@ -506,13 +507,13 @@ button {
 	margin-right: 20px;
 }
 
-.footer__list-item-list{
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.footer__list-item-list {
+	display: flex;
+	align-items: center;
+	gap: 20px;
 }
 
-.footer__list-sub{
-  display: flex;
-  justify-content: space-between;
+.footer__list-sub {
+	display: flex;
+	justify-content: space-between;
 }

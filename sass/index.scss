@@ -4,6 +4,7 @@ $font: 'Gilroy-Regular', sans-serif;
 $font-noto: "Noto Sans", sans-serif;
 $color-text: #fff;
 $color-bg-Btn: #333;
+$color-grey: #979797;
 
 @mixin sectionTitle {
   text-align: center;
@@ -36,3 +37,4 @@ $color-bg-Btn: #333;
 @import 'catalog';
 @import 'about';
 @import 'media';
+@import 'infocard';
